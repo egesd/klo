@@ -1,10 +1,12 @@
 <?php
 	
 	# Tietokannan asetukset
-	$dbHost = 'localhost';
-	$dbName = 'klo';
-	$dbUsername = 'root';
-	$dbPassword = '';
+	$url = parse_url(getenv("CLEARDB_DATABASE_URL: mysql://be3796d849fded:57df9d26@eu-cdbr-west-01.cleardb.com/heroku_19bff8193126863?reconnect=true"));
+
+	$server = $url["host"];
+	$username = $url["be3796d849fded"];
+	$password = $url["57df9d26"];
+	$db = substr($url["path"], 1);
 	
 	# Aloitetaan istunto
 	session_start();
