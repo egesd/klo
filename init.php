@@ -1,11 +1,11 @@
 <?php
 	
-	# Tietokannan asetukset
-	$url = parse_url(getenv("CLEARDB_DATABASE_URL: mysql://be3796d849fded:57df9d26@eu-cdbr-west-01.cleardb.com/heroku_19bff8193126863?reconnect=true"));
+	# Tietokannan asetukset 
+	$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 	$server = $url["host"];
-	$username = $url["be3796d849fded"];
-	$password = $url["57df9d26"];
+	$username = $url["user"];
+	$password = $url["pass"];
 	$db = substr($url["path"], 1);
 	
 	# Aloitetaan istunto
