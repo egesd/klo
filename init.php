@@ -4,8 +4,8 @@
 	
 	$server = getenv("CLEARDB_SERVER");
 	$username = getenv("CLEARDB_USERNAME");
-	$password = getenv["CLEARDB_PASSWORD"];
-	$db = getenv["CLEARDB_DB");
+	$password = getenv("CLEARDB_PASSWORD)"=;
+	$db = getenv("CLEARDB_DB");
 	
 	# Aloitetaan istunto
 	session_start();
